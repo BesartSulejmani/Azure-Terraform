@@ -1,6 +1,7 @@
 variable "prefix" {
   type    = string
   description = "Prefix differentiator"
+  default = "my"
 }
 
 variable "location" {

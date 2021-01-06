@@ -51,11 +51,11 @@ stages :
                 displayName: 'plan'
                 inputs:
                   provider: 'azurerm'
-                  command: 'plan'
+                  command: 'plan -input=false'
                   environmentServiceNameAzureRM: 'Terraform-Azure'
               - task: TerraformTaskV1@0
                 displayName: 'apply'
                 inputs:
                   provider: 'azurerm'
-                  command: 'apply'
+                  command: 'apply -input=false'
                   environmentServiceNameAzureRM: 'Terraform-Azure'
